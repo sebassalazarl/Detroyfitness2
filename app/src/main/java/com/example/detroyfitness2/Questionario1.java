@@ -69,7 +69,6 @@ public class Questionario1 extends AppCompatActivity {
         spinnerSexo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-               System.out.println("JKDNAWDNADNAW");
                 data.put("sexo", (String) parent.getItemAtPosition(position));
             }
             @Override
@@ -91,7 +90,7 @@ public class Questionario1 extends AppCompatActivity {
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                System.out.println("holiapkofawdoawiodnukawbnduiawhdhuawuh");
+
             }
         });
 

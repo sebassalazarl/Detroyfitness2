@@ -100,7 +100,7 @@ public class Nutricion extends AppCompatActivity {
         boton_evaluacioncorporal.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de evaluacio corporal
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Nutricion.this, Questionario1.class);
+                Intent intent = new Intent(Nutricion.this, Nutricion.class);
                 startActivity(intent);
             }
         });
@@ -109,6 +109,14 @@ public class Nutricion extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Nutricion.this, Recetas.class);
+                startActivity(intent);
+            }
+        });
+
+        boton_alimentos.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de alimentos
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nutricion.this, Nutricion_alimentos.class);
                 startActivity(intent);
             }
         });

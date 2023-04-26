@@ -8,12 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:id="@+id/main"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/container_main"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/toolbar"
-            android:layout_below="@+id/header"/>
+            android:layout_height="match_parent" />
 
         <RelativeLayout
             android:id="@+id/header"
@@ -38,9 +38,9 @@
                 android:id="@+id/flecha_atras"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:background="@drawable/flechatras"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
+                android:background="@drawable/flechatras"
                 android:text="Button" />
 
         </RelativeLayout>
