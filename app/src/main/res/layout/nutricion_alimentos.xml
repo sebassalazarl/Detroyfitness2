@@ -21,7 +21,7 @@
                 android:layout_height="match_parent"
                 android:layout_above="@+id/toolbar"
                 android:layout_below="@+id/header"
-                tools:listitem="@layout/style_alimentos"/>
+                tools:listitem="@layout/style_alimentos" />
 
             <RelativeLayout
                 android:id="@+id/header"

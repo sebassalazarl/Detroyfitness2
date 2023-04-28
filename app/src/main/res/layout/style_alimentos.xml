@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <!-- Creem un relativeLayout amb height Wrap i les mesures del seu pare. Amb els bias estem obligant que el layout sempre estigu ubicat a d'alt de tot. -->
     <RelativeLayout

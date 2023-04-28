@@ -1,19 +1,51 @@
 package com.example.detroyfitness2;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.List;
 
 public class MiAdaptadorPersonalizado extends RecyclerView.Adapter<MiAdaptadorPersonalizado.ViewHolder> {
     private List<Alimentos> listaAlimentos;
+    private FirebaseFirestore db;
 
     public MiAdaptadorPersonalizado(List<Alimentos> listaAlimentos) {
         this.listaAlimentos = listaAlimentos;
+        db = FirebaseFirestore.getInstance();
+        db.collection("alimentos")
+                .addSnapshotListener(new EventListener<QuerySnapshot>() {
+
+                    @Override
+                    public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                        if (error != null) {
+                            Log.w(TAG, "Error al obtener los datos", error);
+                            return;
+                        }
+
+                        listaAlimentos.clear();
+                        for (DocumentSnapshot document : value) {
+                            if (document.exists()) {
+                                Alimentos alimento = document.toObject(Alimentos.class);
+                                listaAlimentos.add(alimento);
+                            }
+                        }
+                        notifyDataSetChanged();
+                    }
+                });
     }
 
     @Override
@@ -55,3 +87,4 @@ public class MiAdaptadorPersonalizado extends RecyclerView.Adapter<MiAdaptadorPe
         }
     }
 }
+

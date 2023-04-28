@@ -28,7 +28,7 @@ public class Nutricion_alimentos extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     CollectionReference alimentosRef = db.collection("alimentos");
     ArrayList<Alimentos> listaAlimentos = new ArrayList<>();
-    DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("alimentos");
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,32 +36,10 @@ public class Nutricion_alimentos extends AppCompatActivity {
 
         RecyclerView lista = findViewById(R.id.container_main);
 
+        lista.setLayoutManager(new LinearLayoutManager(this));
+        MiAdaptadorPersonalizado miAdaptadorPersonalizado = new MiAdaptadorPersonalizado(listaAlimentos);
+        lista.setAdapter(miAdaptadorPersonalizado);
 
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                List<Alimentos> listaAlimentos = new ArrayList<>();
-
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    String nombre = snapshot.child("nombre").getValue(String.class);
-                    String kcal = snapshot.child("kcal").getValue(String.class);
-                    String proteina = snapshot.child("proteina").getValue(String.class);
-                    String grasas = snapshot.child("grasas").getValue(String.class);
-                    String carbohidratos = snapshot.child("carbohidratos").getValue(String.class);
-
-                    Alimentos alimento = new Alimentos(nombre,carbohidratos,grasas, kcal, proteina);
-                    listaAlimentos.add(alimento);
-                }
-
-                MiAdaptadorPersonalizado adaptador = new MiAdaptadorPersonalizado(listaAlimentos);
-                lista.setAdapter(adaptador);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.w(TAG, "onCancelled", databaseError.toException());
-            }
-        });
 
 
     }
