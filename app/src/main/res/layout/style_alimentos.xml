@@ -22,10 +22,10 @@
         <!-- Creem un botó amb una amplada fixa de 100dp. Aquesta llargada será el tamany del Layout. El boto tindrá un color transparent. -->
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/alimento_fondo"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="Button"
+            android:text=""
             app:backgroundTint="#00FFFFFF"
             />
 
@@ -43,6 +43,47 @@
             <!-- Creem un text per a l'estat. Li diem amb el layout_below que sempre s'ubiqui sota del text nom. A part, li diem am el alignleft que el seu marge esquerra sigui el mateix que el text del nom -->
 
 
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proteina: "
+                android:layout_alignTop="@+id/proteina_text"
+                android:layout_alignRight="@+id/proteina_text"
+                android:layout_marginRight="40dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grasas: "
+                android:layout_alignRight="@+id/grasas_text"
+                android:layout_marginRight="40dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/carbo_text"
+                android:layout_marginRight="190dp"
+                android:text="Carbs: "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kcal: "
+                android:layout_alignTop="@+id/kcal_text"
+                android:layout_alignLeft="@+id/nombre_text"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/nombre_text"
@@ -57,18 +98,19 @@
 
             <TextView
                 android:id="@+id/kcal_text"
-                android:layout_width="170dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nombre_text"
                 android:layout_alignLeft="@id/nombre_text"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="20dp"
                 android:text="kcal"
+                android:textAlignment="center"
                 android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/proteina_text"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nombre_text"
                 android:layout_alignParentEnd="true"
@@ -79,7 +121,7 @@
 
             <TextView
                 android:id="@+id/grasas_text"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="20dp"
@@ -89,7 +131,7 @@
 
             <TextView
                 android:id="@+id/carbo_text"
-                android:layout_width="170dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerHorizontal="true"

@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Entrenamiento extends AppCompatActivity {
+public class Entrenamiento_tecnica extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class Entrenamiento extends AppCompatActivity {
         botontoolbar_perfil.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de perfil
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Perfil.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Perfil.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +40,7 @@ public class Entrenamiento extends AppCompatActivity {
         botontoolbar_nutricion.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de nutricion
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Nutricion.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Nutricion.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +48,7 @@ public class Entrenamiento extends AppCompatActivity {
         botontoolbar_entrenamiento.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de entrenamiento
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Entrenamiento.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Entrenamiento_tecnica.class);
                 startActivity(intent);
             }
     });
@@ -56,40 +56,45 @@ public class Entrenamiento extends AppCompatActivity {
         boton_atras.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de atras
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Pagina_principal.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Pagina_principal.class);
                 startActivity(intent);
             }
         });
-
+//==================================================================================================
         //botones de main para cambiar pantalla
-        boton_planentrenamiento.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de plan de entrenamiento
+
+        //ejecucion del botón de entramiento funcional
+        boton_planentrenamiento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Entrenamiento_planes.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Pagina_principal.class);
                 startActivity(intent);
             }
         });
 
-        boton_desafiosemanal.setOnClickListener(new View.OnClickListener() { //ejecucion del botón del desafio semanal
+        //ejecucion del botón de entramiento de hipertrofia
+        boton_desafiosemanal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Entrenamiento_desafio.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Pagina_principal.class);
                 startActivity(intent);
             }
         });
 
-        boton_sobrecarga.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de la sobrecarga progresiva
+        //ejecucion del botón de entramiento de iniciación
+        boton_sobrecarga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Entrenamiento_sobrecarga.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Pagina_principal.class);
                 startActivity(intent);
             }
         });
 
-        boton_tecnica.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de tecnica
+        //ejecucion del botón de entramiento de perdida de grasa
+        boton_tecnica.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Entrenamiento.this, Entrenamiento_tecnica.class);
+                Intent intent = new Intent(Entrenamiento_tecnica.this, Pagina_principal.class);
                 startActivity(intent);
             }
         });

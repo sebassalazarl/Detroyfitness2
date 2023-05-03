@@ -13,7 +13,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/toolbar"
-            android:layout_below="@+id/header"/>
+            android:layout_below="@+id/header">
+
+            <ImageButton
+                android:id="@+id/b_excel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/excel" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/header"
@@ -48,26 +57,14 @@
             android:id="@+id/texto_sobrecarga"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-
-
             android:layout_centerInParent="true"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="200dp"
             android:layout_marginRight="20dp"
             android:justificationMode="inter_word"
-            android:text="La sobrecarga progresiva es el aumento gradual del esfuerzo al que es sometido el cuerpo durante el entrenamiento físico. Gracias a esto podremos incrementar nuestra fuerza gradualmente. En este caso tenemos dos opciones para realizar la sobre carga progresiva: \n\n\n\• Para poder incrementar en el ejercicio que nosotros queramos tendremos que completar 3 series de 12 repeticiones cada una, una vez realizadas incrementaremos un poco el peso hasta que se pueda volver a completar el 3x12. \n\n\n\• Esta opción es una planificacion de 4 semanas que se realizara en base a tu rm (repeticion maxima) la cual te creara una rutina de series y repeticiones con un cierto peso, clic aqui para ir al excel."
+            android:text="La sobrecarga progresiva es el aumento gradual del esfuerzo al que es sometido el cuerpo durante el entrenamiento físico. Gracias a esto podremos incrementar nuestra fuerza gradualmente. En este caso tenemos dos opciones para realizar la sobre carga progresiva: \n\n\n\• Para poder incrementar peso en el ejercicio que nosotros queramos tendremos que completar 3 series de 12 repeticiones cada una, una vez realizadas incrementaremos un poco el peso hasta que se pueda volver a completar el 3x12. \n\n\n\• Esta opción es una planificacion de 4 semanas que se realizara en base a tu rm (repeticion maxima) la cual te creara una rutina de series y repeticiones con un cierto peso, dando clic al icono podras ver el excel."
             android:textColor="@color/black"
             android:textSize="15dp" />
-
-        <Button
-            android:id="@+id/B_clic_aqui"
-            android:layout_width="170dp"
-            android:layout_height="25dp"
-            android:layout_marginVertical="415dp"
-            android:layout_marginHorizontal="55dp"
-            android:layout_marginRight="170dp"
-            android:background="@android:color/transparent"
-            android:text="" />
 
 
         <RelativeLayout

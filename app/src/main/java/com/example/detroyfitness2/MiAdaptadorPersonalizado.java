@@ -6,16 +6,23 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.ListResult;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.List;
 
@@ -41,6 +48,7 @@ public class MiAdaptadorPersonalizado extends RecyclerView.Adapter<MiAdaptadorPe
                             if (document.exists()) {
                                 Alimentos alimento = document.toObject(Alimentos.class);
                                 listaAlimentos.add(alimento);
+
                             }
                         }
                         notifyDataSetChanged();
@@ -76,8 +84,11 @@ public class MiAdaptadorPersonalizado extends RecyclerView.Adapter<MiAdaptadorPe
         public TextView grasasTextView;
         public TextView carbohidratosTextView;
 
+
+
         public ViewHolder(View itemView) {
             super(itemView);
+
 
             nombreTextView = itemView.findViewById(R.id.nombre_text);
             kcalTextView = itemView.findViewById(R.id.kcal_text);
@@ -86,5 +97,6 @@ public class MiAdaptadorPersonalizado extends RecyclerView.Adapter<MiAdaptadorPe
             carbohidratosTextView = itemView.findViewById(R.id.carbo_text);
         }
     }
+
 }
 

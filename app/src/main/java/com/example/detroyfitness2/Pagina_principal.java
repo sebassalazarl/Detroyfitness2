@@ -85,11 +85,7 @@ public class Pagina_principal  extends AppCompatActivity {
     public void obtener_usuario(){
         //textview declarado
         TextView username = findViewById(R.id.NombreUsuarioView);
-
-
-
         DocumentReference docRef = db.collection("usuarios").document(user.getEmail());
-
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {

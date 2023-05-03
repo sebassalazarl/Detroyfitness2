@@ -8,18 +8,18 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Recetas extends AppCompatActivity {
+public class Entrenamiento_sobrecarga extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recetas);
+        setContentView(R.layout.entrenamiento_sobrecarga);
 
-        //Botones header
-        ImageButton boton_atras = findViewById(R.id.flecha_atras_recetas);
+        //Botones Header
+        ImageButton boton_atras = findViewById(R.id.flecha_atras);
 
-        //botones main
-        ImageButton receta1 = findViewById(R.id.B_receta1);
-        ImageButton receta2 = findViewById(R.id.B_receta2);
+        //Botones main
+        ImageButton boton_excel = findViewById(R.id.b_excel);
+
         //botones declarados toolbar
         Button botontoolbar_perfil = findViewById(R.id.B_perfil);
         Button botontoolbar_entrenamiento = findViewById(R.id.B_entrenamiento);
@@ -29,15 +29,7 @@ public class Recetas extends AppCompatActivity {
         botontoolbar_perfil.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de perfil
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Recetas.this, Perfil.class);
-                startActivity(intent);
-            }
-        });
-
-        receta1.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de nutricion
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Recetas.this, Videos_recetas.class);
+                Intent intent = new Intent(Entrenamiento_sobrecarga.this, Perfil.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +37,7 @@ public class Recetas extends AppCompatActivity {
         botontoolbar_nutricion.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de nutricion
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Recetas.this, Nutricion.class);
+                Intent intent = new Intent(Entrenamiento_sobrecarga.this, Nutricion.class);
                 startActivity(intent);
             }
         });
@@ -53,20 +45,31 @@ public class Recetas extends AppCompatActivity {
         botontoolbar_entrenamiento.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de entrenamiento
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Recetas.this, Entrenamiento.class);
+                Intent intent = new Intent(Entrenamiento_sobrecarga.this, Entrenamiento_sobrecarga.class);
                 startActivity(intent);
             }
-        });
+    });
 
         boton_atras.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de atras
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Recetas.this, Nutricion.class);
+                Intent intent = new Intent(Entrenamiento_sobrecarga.this, Entrenamiento.class);
+                startActivity(intent);
+            }
+        });
+//==================================================================================================
+        //botones de main para cambiar pantalla
+
+        //ejecucion del botón de excel
+        boton_excel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Entrenamiento_sobrecarga.this, Entrenamiento_sobrecarga_2.class);
                 startActivity(intent);
             }
         });
 
 
-    }
 
+}
 }

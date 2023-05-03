@@ -16,7 +16,16 @@
             android:layout_below="@+id/header">
 
             <ImageButton
-                android:id="@+id/B_plansemanal"
+                android:id="@+id/B_rutinaFuncional"
+                android:layout_width="380dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="20dp"
+                android:layout_above="@+id/B_rutinaHipertrofia"
+                android:background="@drawable/photo_planes_funcional"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageButton
+                android:id="@+id/B_rutinaHipertrofia"
                 android:layout_width="380dp"
                 android:layout_height="110dp"
                 android:layout_above="@+id/referencia"
@@ -24,26 +33,18 @@
                 android:layout_centerHorizontal="true"/>
 
             <ImageButton
-                android:id="@+id/B_evaluacionCoporal"
-                android:layout_width="380dp"
-                android:layout_height="110dp"
-                android:layout_marginBottom="20dp"
-                android:layout_above="@+id/B_plansemanal"
-                android:background="@drawable/photo_planes_funcional"
-                android:layout_centerHorizontal="true"/>
-            <ImageButton
-                android:id="@+id/B_recetas"
+                android:id="@+id/B_rutinaIniciacion"
                 android:layout_width="380dp"
                 android:layout_height="110dp"
                 android:layout_below="@+id/referencia"
                 android:background="@drawable/photo_planes_iniciacion"
                 android:layout_centerHorizontal="true"/>
             <ImageButton
-                android:id="@+id/B_alimentos"
+                android:id="@+id/B_rutinaPerdida"
                 android:layout_width="380dp"
                 android:layout_height="110dp"
                 android:layout_marginTop="20dp"
-                android:layout_below="@+id/B_recetas"
+                android:layout_below="@+id/B_rutinaIniciacion"
                 android:background="@drawable/photo_planes_perdida"
                 android:layout_centerHorizontal="true"/>
 
@@ -68,7 +69,7 @@
                 android:id="@+id/textonutricion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/flecha_atras"
+                android:layout_alignLeft="@+id/B_flecha_atras_entrenamiento"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="30dp"
                 android:text="Planes de entrenamiento"
@@ -77,7 +78,7 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/flecha_atras"
+                android:id="@+id/B_flecha_atras_entrenamiento"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@drawable/flechatras"

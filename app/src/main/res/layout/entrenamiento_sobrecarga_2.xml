@@ -8,13 +8,406 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+        <!-- PANTALLA CENTRAL -->
         <RelativeLayout
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/toolbar"
-            android:layout_below="@+id/header"/>
+            android:layout_below="@+id/header">
 
+            <!-- BOTON DE CALCULAR -->
+            <Button
+                android:id="@+id/b_calcular"
+                android:layout_marginTop="18dp"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="210dp"
+                android:backgroundTint="#C2CA3E"
+                android:text="CALCULAR" />
+
+<!-- ########################################################################################### -->
+            <!-- IMAGEN SEMANA 1 -->
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_down"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- TEXTO SEMANA 1 -->
+            <TextView
+                android:id="@+id/semana1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="72dp"
+                android:text="Semana 1"
+                android:textColor="#c2ca3e"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SEMANA 1 -->
+            <TextView
+                android:id="@+id/luness1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="110dp"
+                android:text="Lunes"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SEMANA 1 -->
+            <TextView
+                android:id="@+id/juevess1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="135dp"
+                android:text="Jueves"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SERIES SEMANA 1 -->
+            <TextView
+                android:id="@+id/lunesseriess1"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="110dp"
+                android:text="X 8 (5 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SERIES SEMANA 1 -->
+            <TextView
+                android:id="@+id/juevesseriess1"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="135dp"
+                android:text="X 12 (3 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- RESULTADO JUEVES SEMANA 1 -->
+            <TextView
+                android:id="@+id/resultadoluness1"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="110dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <!-- RESULTADO LUNES SEMANA 1 -->
+            <TextView
+                android:id="@+id/resultadojuevess1"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="135dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+<!-- ########################################################################################### -->
+            <!-- IMAGEN SEMANA 2 -->
+            <ImageView
+                android:id="@+id/imagensemana2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_down"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- TEXTO SEMANA 2 -->
+            <TextView
+                android:id="@+id/semana2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="172dp"
+                android:text="Semana 2"
+                android:textColor="#c2ca3e"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SEMANA 2 -->
+            <TextView
+                android:id="@+id/luness2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                android:text="Lunes"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SEMANA 2 -->
+            <TextView
+                android:id="@+id/juevess2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="235dp"
+                android:text="Jueves"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SERIES SEMANA 2 -->
+            <TextView
+                android:id="@+id/lunesseriess2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="210dp"
+                android:text="X 5 (5 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SERIES SEMANA 2 -->
+            <TextView
+                android:id="@+id/juevesseriess2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="235dp"
+                android:text="X 8 (3 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- RESULTADO JUEVES SEMANA 2 -->
+            <TextView
+                android:id="@+id/resultadoluness2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="210dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <!-- RESULTADO LUNES SEMANA 2 -->
+            <TextView
+                android:id="@+id/resultadojuevess2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="235dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+<!-- ########################################################################################### -->
+            <!-- IMAGEN SEMANA 3 -->
+            <ImageView
+                android:id="@+id/imagensemana3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_down"
+                android:layout_marginTop="270dp"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- TEXTO SEMANA 3 -->
+            <TextView
+                android:id="@+id/semana3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="272dp"
+                android:text="Semana 3"
+                android:textColor="#c2ca3e"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SEMANA 3 -->
+            <TextView
+                android:id="@+id/luness3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="310dp"
+                android:text="Lunes"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SEMANA 3 -->
+            <TextView
+                android:id="@+id/juevess3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="335dp"
+                android:text="Jueves"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SERIES SEMANA 3 -->
+            <TextView
+                android:id="@+id/lunesseriess3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="310dp"
+                android:text="X 3 (6 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SERIES SEMANA 3 -->
+            <TextView
+                android:id="@+id/juevesseriess3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="335dp"
+                android:text="X 5 (4 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- RESULTADO JUEVES SEMANA 3 -->
+            <TextView
+                android:id="@+id/resultadoluness3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="310dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <!-- RESULTADO LUNES SEMANA 3 -->
+            <TextView
+                android:id="@+id/resultadojuevess3"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="335dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+<!-- ########################################################################################### -->
+            <!-- IMAGEN SEMANA 4 -->
+            <ImageView
+                android:id="@+id/imagensemana4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_down"
+                android:layout_marginTop="370dp"
+                android:layout_marginLeft="30dp"/>
+
+            <!-- TEXTO SEMANA 4 -->
+            <TextView
+                android:id="@+id/semana4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="372dp"
+                android:text="Semana 4"
+                android:textColor="#c2ca3e"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SEMANA 4 -->
+            <TextView
+                android:id="@+id/luness4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="410dp"
+                android:text="Lunes"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SEMANA 4 -->
+            <TextView
+                android:id="@+id/juevess4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="435dp"
+                android:text="Jueves"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO LUNES SERIES SEMANA 4 -->
+            <TextView
+                android:id="@+id/lunesseriess4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="410dp"
+                android:text="X 2 (4 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- TEXTO JUEVES SERIES SEMANA 4 -->
+            <TextView
+                android:id="@+id/juevesseriess4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="435dp"
+                android:text="X 3 (3 Series)"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <!-- RESULTADO JUEVES SEMANA 4 -->
+            <TextView
+                android:id="@+id/resultadoluness4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="410dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <!-- RESULTADO LUNES SEMANA 4 -->
+            <TextView
+                android:id="@+id/resultadojuevess4"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="435dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <!-- TOOLBAR DE ARRIBA -->
         <RelativeLayout
             android:id="@+id/header"
             android:layout_width="match_parent"
@@ -43,6 +436,17 @@
                 android:text="Button" />
 
         </RelativeLayout>
+
+        <!-- INFRESA TU RM -->
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="220dp"
+            android:layout_marginTop="100dp"
+            android:hint="Ingresa un rm"/>
+
 
 
         <RelativeLayout

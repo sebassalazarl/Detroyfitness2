@@ -41,6 +41,20 @@
         <activity android:name=".Questionario3" />
         <activity android:name=".Recetas" />
         <activity android:name=".Nutricion_alimentos" />
+        <activity android:name=".Videos_recetas" />
+        <activity android:name=".Entrenamiento_planes" />
+        <activity android:name=".Entrenamiento_planes_funcional" />
+        <activity android:name=".Entrenamiento_planes_funcional_rutina" />
+        <activity android:name=".Entrenamiento_planes_hipertrofia" />
+        <activity android:name=".Entrenamiento_planes_hipertrofia_rutina" />
+        <activity android:name=".Entrenamiento_planes_iniciacion" />
+        <activity android:name=".Entrenamiento_planes_iniciacion_rutina" />
+        <activity android:name=".Entrenamiento_planes_perdida" />
+        <activity android:name=".Entrenamiento_planes_perdida_rutina" />
+        <activity android:name=".Entrenamiento_desafio" />
+        <activity android:name=".Entrenamiento_sobrecarga" />
+        <activity android:name=".Entrenamiento_sobrecarga_2" />
+        <activity android:name=".Entrenamiento_tecnica" />
 
     </application>
 

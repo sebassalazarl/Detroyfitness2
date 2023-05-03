@@ -4,69 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/texto_sobrecarga3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="200dp"
-            android:layout_marginRight="20dp"
-            android:justificationMode="inter_word"
-            android:text="Cuantos dias a la semana entrenaras la rutina 'Perdida de grasa'?"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
-
-        <Button
-            android:id="@+id/B_rutinaPerdida_dia1"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="140dp"
-            android:text="1 dia"
-            android:backgroundTint="#c2ca3e"
-            />
-        <Button
-            android:id="@+id/B_rutinaPerdida_dia2"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="190dp"
-            android:text="2 dias"
-            android:backgroundTint="#c2ca3e"
-            />
-        <Button
-            android:id="@+id/B_rutinaPerdida_dia3"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="240dp"
-            android:text="3 dias"
-            android:backgroundTint="#c2ca3e"
-            />
-        <Button
-            android:id="@+id/B_rutinaPerdida_dia4"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="290dp"
-            android:text="4 dias"
-            android:backgroundTint="#c2ca3e"
-            />
-        <Button
-            android:id="@+id/B_rutinaPerdida_dia5"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="340dp"
-            android:text="5 dias"
-            android:backgroundTint="#c2ca3e"
-            />
-
 
         <RelativeLayout
             android:id="@+id/header"
@@ -74,27 +15,42 @@
             android:layout_height="80dp"
             android:background="@drawable/background_toolbar">
 
-
-            <TextView
-                android:id="@+id/textonutricion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/B_flecha_atras_entrenamiento"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:text="Perdida de grasa"
-                android:textColor="#c2ca3e"
-                android:textSize="22dp"
-                android:textStyle="bold" />
-
             <ImageButton
-                android:id="@+id/B_flecha_atras_entrenamiento"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/flechatras"
+                android:id="@+id/flecha_atras"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
+                android:background="@drawable/flechatras"
                 android:text="Button" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_above="@+id/referencia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/referencia"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:text="" />
 
         </RelativeLayout>
 
@@ -159,12 +115,12 @@
 
             <ImageView
                 android:id="@+id/botonperfil_img"
-                app:srcCompat="@drawable/botonp_img"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_alignLeft="@+id/botonEntreno_img"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/botonp_img" />
 
 
             <Button
@@ -200,7 +156,6 @@
                 android:text="" />
 
         </RelativeLayout>
-
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

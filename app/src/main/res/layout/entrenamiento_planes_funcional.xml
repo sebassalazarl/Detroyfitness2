@@ -22,7 +22,7 @@
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/b_funcional_1"
+            android:id="@+id/B_rutinaFuncional_dia1"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -31,7 +31,7 @@
             android:backgroundTint="#c2ca3e"
             />
         <Button
-            android:id="@+id/b_funcional_2"
+            android:id="@+id/B_rutinaFuncional_dia2"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -40,7 +40,7 @@
             android:backgroundTint="#c2ca3e"
             />
         <Button
-            android:id="@+id/b_funcional_3"
+            android:id="@+id/B_rutinaFuncional_dia3"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -49,7 +49,7 @@
             android:backgroundTint="#c2ca3e"
             />
         <Button
-            android:id="@+id/b_funcional_4"
+            android:id="@+id/B_rutinaFuncional_dia4"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -58,7 +58,7 @@
             android:backgroundTint="#c2ca3e"
             />
         <Button
-            android:id="@+id/b_funcional_5"
+            android:id="@+id/B_rutinaFuncional_dia5"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -79,16 +79,16 @@
                 android:id="@+id/textonutricion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/flecha_atras"
+
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="50dp"
                 android:text="Funcional"
                 android:textColor="#c2ca3e"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/flecha_atras"
+                android:id="@+id/B_flecha_atras_entrenamiento"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@drawable/flechatras"
