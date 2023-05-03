@@ -38,6 +38,26 @@ public class Recetas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Recetas.this, Videos_recetas.class);
+
+                // Agrega la variable a la intención
+                String link ="https://firebasestorage.googleapis.com/v0/b/detroy-fitness-e203b.appspot.com/o/videos_recetas%2Fcream_calabaza.mp4?alt=media&token=95dd8e44-1b73-408d-b3ee-491beac9688b" ;
+                intent.putExtra("link", link);
+
+                // Lanza la actividad
+                startActivity(intent);
+            }
+        });
+
+        receta2.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de nutricion
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Recetas.this, Videos_recetas.class);
+
+                // Agrega la variable a la intención
+                String link = "https://firebasestorage.googleapis.com/v0/b/detroy-fitness-e203b.appspot.com/o/videos_recetas%2Fmouse_de_chocolate.mp4?alt=media&token=a81425fe-3047-4237-bcb8-09fba5657648";
+                intent.putExtra("link", link);
+
+                // Lanza la actividad
                 startActivity(intent);
             }
         });

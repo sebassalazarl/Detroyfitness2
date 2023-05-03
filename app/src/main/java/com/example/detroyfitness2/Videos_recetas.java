@@ -18,13 +18,21 @@ public class Videos_recetas extends AppCompatActivity {
 
     FirebaseStorage storage = FirebaseStorage.getInstance();
     StorageReference storageRef = storage.getReference().child("videos_recetas/cream_calabaza.mp4");
-    String videoUrl = "https://firebasestorage.googleapis.com/v0/b/detroy-fitness-e203b.appspot.com/o/videos_recetas%2Fcream_calabaza.mp4?alt=media&token=95dd8e44-1b73-408d-b3ee-491beac9688b";
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.videos_recetas);
+
+
+        // Recupera el Intent que inició esta actividad
+        Intent intent = getIntent();
+
+        String link = getIntent().getStringExtra("link");
+
+
 
         //Botones header
         ImageButton boton_atras = findViewById(R.id.flecha_atras);
@@ -33,7 +41,7 @@ public class Videos_recetas extends AppCompatActivity {
         VideoView videoView = findViewById(R.id.videoView);
        // videoView.setVideoURI(Uri.parse(storageRef.toString()));
 
-        Uri uri = Uri.parse(videoUrl);
+        Uri uri = Uri.parse(link);
         videoView.setVideoURI(uri);
 
         MediaController mediaController = new MediaController(this);
