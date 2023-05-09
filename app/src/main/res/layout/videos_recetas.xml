@@ -31,7 +31,84 @@
             android:layout_below="@+id/header"
             android:layout_above="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#C2CA3E">
+
+
+            <RelativeLayout
+                android:id="@+id/MostrarIngredientes"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/referencia"
+                android:layout_height="match_parent"
+                android:background="#C2CA3E">
+
+                <TextView
+                    android:id="@+id/i_1"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/Titulo"
+                    android:layout_marginLeft="70dp"/>
+
+                <TextView
+                    android:id="@+id/i_2"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_below="@+id/i_1"
+                    android:layout_alignLeft="@+id/i_1"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/i_3"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_below="@+id/i_2"
+                    android:layout_alignLeft="@+id/i_1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/i_4"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_below="@+id/i_3"
+                    android:layout_alignLeft="@+id/i_1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/i_5"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:layout_below="@+id/i_4"
+                    android:layout_alignLeft="@+id/i_1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/Titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredientes"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_above="@+id/referencia"

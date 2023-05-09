@@ -40,8 +40,10 @@ public class Recetas extends AppCompatActivity {
                 Intent intent = new Intent(Recetas.this, Videos_recetas.class);
 
                 // Agrega la variable a la intención
+                String receta = "receta_calabaza";
                 String link ="https://firebasestorage.googleapis.com/v0/b/detroy-fitness-e203b.appspot.com/o/videos_recetas%2Fcream_calabaza.mp4?alt=media&token=95dd8e44-1b73-408d-b3ee-491beac9688b" ;
                 intent.putExtra("link", link);
+                intent.putExtra("receta", receta);
 
                 // Lanza la actividad
                 startActivity(intent);
@@ -54,8 +56,10 @@ public class Recetas extends AppCompatActivity {
                 Intent intent = new Intent(Recetas.this, Videos_recetas.class);
 
                 // Agrega la variable a la intención
+                String receta = "receta_mouse";
                 String link = "https://firebasestorage.googleapis.com/v0/b/detroy-fitness-e203b.appspot.com/o/videos_recetas%2Fmouse_de_chocolate.mp4?alt=media&token=a81425fe-3047-4237-bcb8-09fba5657648";
                 intent.putExtra("link", link);
+                intent.putExtra("receta", receta);
 
                 // Lanza la actividad
                 startActivity(intent);
