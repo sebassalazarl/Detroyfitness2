@@ -216,8 +216,6 @@
                 android:background="@drawable/redondeo_botones"/>
 
 
-
-
         </RelativeLayout>
 
         <RelativeLayout

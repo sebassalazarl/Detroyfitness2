@@ -2,11 +2,14 @@ package com.example.detroyfitness2;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,6 +27,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -123,6 +128,9 @@ public class Questionario2 extends AppCompatActivity {
             }
         });
     }
+
+
+
     public void obtener_usuario(){
         //textview declarado
         TextView username = findViewById(R.id.NombreUsuarioView);

@@ -1,5 +1,6 @@
 package com.example.detroyfitness2;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.SOUTH;
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -24,6 +26,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,7 +36,7 @@ public class Questionario3 extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String username1 ;
     Map<String, Object> data = new HashMap<>();
-
+    CalendarView calendarView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +46,9 @@ public class Questionario3 extends AppCompatActivity {
         ImageButton boton_atras = findViewById(R.id.flecha_atras_questionario3);
 
         obtener_usuario();
+
+
+
 
         //Botones main
         Button Finalizar_questionario = findViewById(R.id.B_siguiente);
@@ -54,8 +60,7 @@ public class Questionario3 extends AppCompatActivity {
 
         //DECLARACION DE GROUPBUTTONS
         RadioGroup group_objetivo = findViewById(R.id.Comidas_diarias);
-
-        //LISTENERS DE OBJETIVO RADIOBUTTONS
+                //LISTENERS DE OBJETIVO RADIOBUTTONS
         group_objetivo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -103,7 +108,12 @@ public class Questionario3 extends AppCompatActivity {
         Finalizar_questionario.setOnClickListener(new View.OnClickListener() { //ejecucion del botón siguiente
             @Override
             public void onClick(View view) {
+
+
+
+
                 // Se inserta el Map en Firestore
+
                 data.put("survey", true);
                 db.collection("usuarios").document(user.getEmail().toString()).update(data);
 
@@ -113,6 +123,8 @@ public class Questionario3 extends AppCompatActivity {
         });
 
     }
+
+
 
     public void obtener_usuario(){
         //textview declarado
