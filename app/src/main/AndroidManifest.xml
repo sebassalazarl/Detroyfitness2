@@ -55,6 +55,11 @@
         <activity android:name=".Entrenamiento_sobrecarga" />
         <activity android:name=".Entrenamiento_sobrecarga_2" />
         <activity android:name=".Entrenamiento_tecnica" />
+        <activity android:name=".Nutricion_plansemanal" />
+        <activity android:name=".Videos_tecnica" />
+        <activity android:name=".Tecnica" />
+        <activity android:name=".MiAdaptadorVideos" />
+
 
     </application>
 

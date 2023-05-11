@@ -63,6 +63,15 @@ public class Nutricion extends AppCompatActivity {
         fotoperfil(foto_perfil);
         obtener_usuario();
 
+
+
+        boton_plansemanal.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de perfil
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Nutricion.this, Nutricion_plansemanal.class);
+                startActivity(intent);
+            }
+        });
         //ejecucion de los botones
         botontoolbar_perfil.setOnClickListener(new View.OnClickListener() { //ejecucion del botón de perfil
             @Override

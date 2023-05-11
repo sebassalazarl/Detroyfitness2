@@ -4,22 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:id="@+id/main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/toolbar"
-            android:layout_below="@+id/header">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/header"
@@ -27,32 +15,44 @@
             android:layout_height="80dp"
             android:background="@drawable/background_toolbar">
 
-
-            <TextView
-                android:id="@+id/textonutricion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/flecha_atras"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:text="Tecnica"
-                android:textColor="#c2ca3e"
-                android:textSize="22dp"
-                android:textStyle="bold" />
-
             <ImageButton
                 android:id="@+id/flecha_atras"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/flechatras"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
+                android:background="@drawable/flechatras"
                 android:text="Button" />
 
         </RelativeLayout>
 
-<!-- ########################################################################################### -->
-        <!-- BOTON DE REFERENCIA -->
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_below="@+id/header"
+            android:layout_above="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_above="@+id/referencia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/referencia"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:text="" />
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/toolbar"
@@ -115,12 +115,12 @@
 
             <ImageView
                 android:id="@+id/botonperfil_img"
-                app:srcCompat="@drawable/botonp_img"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_alignLeft="@+id/botonEntreno_img"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/botonp_img" />
 
 
             <Button
@@ -156,5 +156,6 @@
                 android:text="" />
 
         </RelativeLayout>
+
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

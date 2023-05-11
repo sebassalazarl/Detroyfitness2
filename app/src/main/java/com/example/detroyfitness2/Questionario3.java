@@ -117,6 +117,7 @@ public class Questionario3 extends AppCompatActivity {
                 data.put("survey", true);
                 db.collection("usuarios").document(user.getEmail().toString()).update(data);
 
+                calcularCalorias();
                 Intent intent = new Intent(Questionario3.this, Pagina_principal.class);
                 startActivity(intent);
             }
@@ -125,7 +126,45 @@ public class Questionario3 extends AppCompatActivity {
     }
 
 
+    public void calcularCalorias(){
+        DocumentReference docRef = db.collection("usuarios").document(user.getEmail());
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                    double peso = documentSnapshot.getDouble("peso");
+                    double edad = documentSnapshot.getDouble("edad");
+                    double altura = documentSnapshot.getDouble("altura");
+                    String objetivo = documentSnapshot.getString("objetivo");
+                    String sexo = documentSnapshot.getString("sexo");
 
+                    if (sexo.equals("hombre")){
+                        double TMB = 88.36 +(13.4 * peso)+ (4.8 * altura)- (5.7 * edad );
+                            if (objetivo.equals("Ganar masa muscular")) {
+                                TMB = TMB + 500;
+                                data.put("tmb", TMB);
+                            }else if(objetivo.equals("Perdida de peso")){
+                                TMB = TMB - 500;
+                                data.put("tmb", TMB);
+                            }else{
+                                data.put("tmb", TMB);
+                            }
+                            db.collection("usuarios").document(user.getEmail()).update(data);
+                    }else{
+                        double TMB = 447.6 + (9.2 * peso) + (3.1 * altura) - (4.3 * edad );
+                        data.put("tmb",TMB);
+                        db.collection("usuarios").document(user.getEmail()).update(data);
+                    }
+
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "Error getting document: " + e.getMessage());
+            }
+        });
+    }
     public void obtener_usuario(){
         //textview declarado
         TextView username = findViewById(R.id.NombreUsuarioView);

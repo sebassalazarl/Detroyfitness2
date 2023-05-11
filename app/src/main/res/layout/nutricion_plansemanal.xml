@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:id="@+id/main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/toolbar"
-            android:layout_below="@+id/header">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/header"
@@ -27,21 +17,19 @@
             android:layout_height="80dp"
             android:background="@drawable/background_toolbar">
 
-
             <TextView
-                android:id="@+id/textonutricion"
+                android:id="@+id/textoPlanSemanal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/flecha_atras"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="30dp"
-                android:text="Tecnica"
+                android:layout_marginLeft="50dp"
+                android:text="Plan Semanal"
                 android:textColor="#c2ca3e"
                 android:textSize="22dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/flecha_atras"
+                android:id="@+id/B_flecha_atras"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="@drawable/flechatras"
@@ -51,8 +39,20 @@
 
         </RelativeLayout>
 
-<!-- ########################################################################################### -->
-        <!-- BOTON DE REFERENCIA -->
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_above="@+id/toolbar"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/container_dieta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/style_dieta" />
+        </RelativeLayout>
+
 
         <RelativeLayout
             android:id="@+id/toolbar"
@@ -61,35 +61,36 @@
             android:layout_alignParentBottom="true"
             android:background="@drawable/background_down">
 
+
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonnutricion_img"
-                android:layout_alignRight="@+id/textView"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="150dp"
-                android:text="Nutrición"
                 android:textColor="#c2ca3e"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:layout_alignRight="@+id/textView"
+                android:layout_marginRight="150dp"
+                android:layout_below="@+id/botonnutricion_img"
+                android:layout_marginTop="8dp"
+                android:text="Nutrición" />
 
             <ImageView
                 android:id="@+id/botonnutricion_img"
-                app:srcCompat="@drawable/nutricion_boton"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_alignRight="@+id/botonEntreno_img"
-                android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
-                android:layout_marginRight="140dp" />
+                android:layout_centerHorizontal="true"
+                android:layout_alignRight="@+id/botonEntreno_img"
+                android:layout_marginRight="140dp"
+                app:srcCompat="@drawable/nutricion_boton" />
 
             <Button
                 android:id="@+id/B_nutricion"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignRight="@+id/B_entrenamiento"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/B_entrenamiento"
                 android:layout_marginRight="140dp"
                 android:background="@android:color/transparent"
                 android:text="" />
@@ -98,8 +99,8 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonEntreno_img"
                 android:layout_centerHorizontal="true"
+                android:layout_below="@+id/botonEntreno_img"
                 android:layout_marginTop="8dp"
                 android:text="Entrenamiento"
                 android:textColor="#c2ca3e"
@@ -115,12 +116,13 @@
 
             <ImageView
                 android:id="@+id/botonperfil_img"
-                app:srcCompat="@drawable/botonp_img"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_alignLeft="@+id/botonEntreno_img"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/botonp_img" />
+
 
 
             <Button
@@ -136,25 +138,27 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/botonperfil_img"
+                android:text="Perfil"
                 android:layout_alignLeft="@+id/textView"
                 android:layout_marginLeft="165dp"
-                android:layout_marginTop="8dp"
-                android:text="Perfil"
                 android:textColor="#c2ca3e"
-                android:textSize="12sp" />
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/botonperfil_img"
+                android:textSize="12sp"/>
 
             <Button
                 android:id="@+id/B_perfil"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignLeft="@+id/B_entrenamiento"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/B_entrenamiento"
                 android:layout_marginLeft="140dp"
                 android:background="@android:color/transparent"
                 android:text="" />
 
         </RelativeLayout>
+
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
