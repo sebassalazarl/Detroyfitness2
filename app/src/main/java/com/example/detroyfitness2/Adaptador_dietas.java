@@ -1,5 +1,6 @@
 package com.example.detroyfitness2;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.SOUTH;
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import android.util.Log;
@@ -11,22 +12,35 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.checkerframework.checker.nullness.qual.NonNull;
+
 import java.util.List;
 
 public class Adaptador_dietas extends RecyclerView.Adapter<Adaptador_dietas.ViewHolder> {
+
+
     private List<dieta> listaSemanal;
     private FirebaseFirestore db;
+    private String mdieta;
 
-    public Adaptador_dietas(List<dieta> listaSemanal) {
+    public Adaptador_dietas(List<dieta> listaSemanal, String sDieta_Asignada) {
+
+        this.mdieta = sDieta_Asignada;
         this.listaSemanal = listaSemanal;
         db = FirebaseFirestore.getInstance();
-        db.collection("dietas").document("dieta1").collection("dias")
+
+        db.collection("dietas").document(mdieta).collection("dias").orderBy("numdia")
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
 
                     @Override
@@ -80,7 +94,6 @@ public class Adaptador_dietas extends RecyclerView.Adapter<Adaptador_dietas.View
         public TextView diaTextView;
 
 
-
         public ViewHolder(View itemView) {
             super(itemView);
 
@@ -94,5 +107,8 @@ public class Adaptador_dietas extends RecyclerView.Adapter<Adaptador_dietas.View
         }
     }
 
+
+
 }
+
 

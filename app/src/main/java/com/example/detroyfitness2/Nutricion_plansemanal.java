@@ -143,6 +143,7 @@ public class Nutricion_plansemanal extends AppCompatActivity {
                     //ID del documento encontrado
                     String dietaAsignar = document.getId();
                     data.put("IDdieta", dietaAsignar);
+                    db.collection("usuarios").document(user.getEmail().toString()).update(data);
                 }
             } else {
                 // Si la consulta falla, imprimir el mensaje de error
@@ -150,13 +151,34 @@ public class Nutricion_plansemanal extends AppCompatActivity {
             }
         });
     }
-
+    public String sDieta_Asignada;
     public void RellenarListaDieta(){
-        RecyclerView container_dietas = findViewById(R.id.container_dieta);
 
-        container_dietas.setLayoutManager(new LinearLayoutManager(this));
-        Adaptador_dietas adapter = new Adaptador_dietas(listaSemanal);
-        container_dietas.setAdapter(adapter);
+        DocumentReference docRef = db.collection("usuarios").document(user.getEmail());
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                  sDieta_Asignada= documentSnapshot.getString("IDdieta"); // Almacenamos el dieta en el array
+                    RecyclerView container_dietas = findViewById(R.id.container_dieta);
+                    container_dietas.setLayoutManager(new LinearLayoutManager(Nutricion_plansemanal.this));
+                    Adaptador_dietas adapter = new Adaptador_dietas(listaSemanal, sDieta_Asignada);
+                    container_dietas.setAdapter(adapter);
+
+                } else {
+                    Log.d(TAG, "No such document");
+                }
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Log.d(TAG, "Error getting document: " + e.getMessage());
+            }
+        });
+
+
+
 
     }
 
