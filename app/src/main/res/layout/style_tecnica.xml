@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Creem un relativeLayout amb height Wrap i les mesures del seu pare. Amb els bias estem obligant que el layout sempre estigu ubicat a d'alt de tot. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!-- Creem un botó amb una amplada fixa de 100dp. Aquesta llargada será el tamany del Layout. El boto tindrá un color transparent. -->
+
+        <Button
+            android:id="@+id/button_tecnica"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text=""
+            app:backgroundTint="#00FFFFFF"
+            />
+
+        <!-- Creem un layout dins que contindrà el text. Aquest te una llargada wrap, es a dir, que el seu tamany s'adaptará als elements de dins seu. Per a fer que el seu layout estigui sempre al centre (alineat) del seu pare hem d'utilitzar el valor centerInParent  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/nombre_tecnica"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="Nombre del ejercicio"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
