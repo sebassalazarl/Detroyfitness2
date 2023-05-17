@@ -1,0 +1,394 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.detroyfitness2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:5-79
+14-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:26:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+16-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+16-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.detroyfitness2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.detroyfitness2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:9:5-65:19
+26        android:allowBackup="true"
+26-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:10:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.9.0] C:\Users\Sebas\.gradle\caches\transforms-3\bc2e3861be7a863a3a610d098e6c48dd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+28        android:dataExtractionRules="@xml/data_extraction_rules"
+28-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:11:9-65
+29        android:debuggable="true"
+30        android:fullBackupContent="@xml/backup_rules"
+30-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:12:9-54
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:13:9-43
+32        android:label="@string/app_name"
+32-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:14:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:15:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:16:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.Detroyfitness2" >
+36-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:17:9-52
+37        <activity
+37-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:19:9-33:20
+38            android:name="com.example.detroyfitness2.MainActivity"
+38-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:20:13-41
+39            android:exported="true"
+39-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:21:13-36
+40            android:label="@string/app_name"
+40-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:22:13-45
+41            android:theme="@style/Theme.Detroyfitness2.NoActionBar" >
+41-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:23:13-68
+42            <intent-filter>
+42-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:24:13-28:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:25:17-69
+43-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:25:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:27:17-77
+45-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:27:27-74
+46            </intent-filter>
+47
+48            <meta-data
+48-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:30:13-32:36
+49                android:name="android.app.lib_name"
+49-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:31:17-52
+50                android:value="" />
+50-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:32:17-33
+51        </activity>
+52        <activity android:name="com.example.detroyfitness2.Registrarse" />
+52-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:34:9-49
+52-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:34:19-46
+53        <activity android:name="com.example.detroyfitness2.Pagina_principal" />
+53-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:35:9-54
+53-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:35:19-51
+54        <activity android:name="com.example.detroyfitness2.Perfil" />
+54-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:36:9-44
+54-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:36:19-41
+55        <activity android:name="com.example.detroyfitness2.Entrenamiento" />
+55-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:37:9-51
+55-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:37:19-48
+56        <activity android:name="com.example.detroyfitness2.Nutricion" />
+56-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:38:9-47
+56-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:38:19-44
+57        <activity android:name="com.example.detroyfitness2.Questionario1" />
+57-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:39:9-51
+57-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:39:19-48
+58        <activity android:name="com.example.detroyfitness2.Questionario2" />
+58-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:40:9-51
+58-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:40:19-48
+59        <activity android:name="com.example.detroyfitness2.Questionario3" />
+59-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:41:9-51
+59-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:41:19-48
+60        <activity android:name="com.example.detroyfitness2.Recetas" />
+60-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:42:9-45
+60-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:42:19-42
+61        <activity android:name="com.example.detroyfitness2.Nutricion_alimentos" />
+61-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:43:9-57
+61-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:43:19-54
+62        <activity android:name="com.example.detroyfitness2.Videos_recetas" />
+62-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:44:9-52
+62-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:44:19-49
+63        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes" />
+63-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:45:9-58
+63-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:45:19-55
+64        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_funcional" />
+64-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:46:9-68
+64-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:46:19-65
+65        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_funcional_rutina" />
+65-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:47:9-75
+65-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:47:19-72
+66        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_hipertrofia" />
+66-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:48:9-70
+66-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:48:19-67
+67        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_hipertrofia_rutina" />
+67-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:49:9-77
+67-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:49:19-74
+68        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_iniciacion" />
+68-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:50:9-69
+68-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:50:19-66
+69        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_iniciacion_rutina" />
+69-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:51:9-76
+69-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:51:19-73
+70        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_perdida" />
+70-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:52:9-66
+70-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:52:19-63
+71        <activity android:name="com.example.detroyfitness2.Entrenamiento_planes_perdida_rutina" />
+71-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:53:9-73
+71-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:53:19-70
+72        <activity android:name="com.example.detroyfitness2.Entrenamiento_desafio" />
+72-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:54:9-59
+72-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:54:19-56
+73        <activity android:name="com.example.detroyfitness2.Entrenamiento_sobrecarga" />
+73-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:55:9-62
+73-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:55:19-59
+74        <activity android:name="com.example.detroyfitness2.Entrenamiento_sobrecarga_2" />
+74-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:56:9-64
+74-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:56:19-61
+75        <activity android:name="com.example.detroyfitness2.Entrenamiento_tecnica" />
+75-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:57:9-59
+75-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:57:19-56
+76        <activity android:name="com.example.detroyfitness2.Nutricion_plansemanal" />
+76-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:58:9-59
+76-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:58:19-56
+77        <activity android:name="com.example.detroyfitness2.Videos_tecnica" />
+77-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:59:9-52
+77-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:59:19-49
+78        <activity android:name="com.example.detroyfitness2.Tecnica" />
+78-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:60:9-45
+78-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:60:19-42
+79        <activity android:name="com.example.detroyfitness2.MiAdaptadorVideos" />
+79-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:61:9-55
+79-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:61:19-52
+80        <activity android:name="com.example.detroyfitness2.entrenamiento_mostrar_rutina" />
+80-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:62:9-66
+80-->C:\Users\Sebas\AndroidStudioProjects\Detroyfitness2-main\app\src\main\AndroidManifest.xml:62:19-63
+81        <activity
+81-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:29:9-46:20
+82            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+82-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:30:13-80
+83            android:excludeFromRecents="true"
+83-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:31:13-46
+84            android:exported="true"
+84-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:32:13-36
+85            android:launchMode="singleTask"
+85-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:33:13-44
+86            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+86-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:34:13-72
+87            <intent-filter>
+87-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:35:13-45:29
+88                <action android:name="android.intent.action.VIEW" />
+88-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+88-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+89
+90                <category android:name="android.intent.category.DEFAULT" />
+90-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+90-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+91                <category android:name="android.intent.category.BROWSABLE" />
+91-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+91-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+92
+93                <data
+93-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+94                    android:host="firebase.auth"
+94-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+95                    android:path="/"
+95-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+96                    android:scheme="genericidp" />
+96-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+97            </intent-filter>
+98        </activity>
+99        <activity
+99-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:47:9-64:20
+100            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+100-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:48:13-79
+101            android:excludeFromRecents="true"
+101-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:49:13-46
+102            android:exported="true"
+102-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:50:13-36
+103            android:launchMode="singleTask"
+103-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:51:13-44
+104            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+104-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:52:13-72
+105            <intent-filter>
+105-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:53:13-63:29
+106                <action android:name="android.intent.action.VIEW" />
+106-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:17-69
+106-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:36:25-66
+107
+108                <category android:name="android.intent.category.DEFAULT" />
+108-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:17-76
+108-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:38:27-73
+109                <category android:name="android.intent.category.BROWSABLE" />
+109-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:17-78
+109-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:39:27-75
+110
+111                <data
+111-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:41:17-44:51
+112                    android:host="firebase.auth"
+112-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:42:21-49
+113                    android:path="/"
+113-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:43:21-37
+114                    android:scheme="recaptcha" />
+114-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:44:21-48
+115            </intent-filter>
+116        </activity>
+117
+118        <service
+118-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:66:9-72:19
+119            android:name="com.google.firebase.components.ComponentDiscoveryService"
+119-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:67:13-84
+120            android:directBootAware="true"
+120-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+121            android:exported="false" >
+121-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:68:13-37
+122            <meta-data
+122-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:69:13-71:85
+123                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+123-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:70:17-109
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-auth:21.3.0] C:\Users\Sebas\.gradle\caches\transforms-3\5c1d2be18c3007c77088cab7d6c2be1e\transformed\firebase-auth-21.3.0\AndroidManifest.xml:71:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\Sebas\.gradle\caches\transforms-3\cb6f39942dc1a911aba95ea423ada252\transformed\firebase-firestore-24.5.0\AndroidManifest.xml:19:13-21:85
+126                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+126-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\Sebas\.gradle\caches\transforms-3\cb6f39942dc1a911aba95ea423ada252\transformed\firebase-firestore-24.5.0\AndroidManifest.xml:20:17-111
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-firestore:24.5.0] C:\Users\Sebas\.gradle\caches\transforms-3\cb6f39942dc1a911aba95ea423ada252\transformed\firebase-firestore-24.5.0\AndroidManifest.xml:21:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\f02826de5e3f0d90931cd1f2719ec8ae\transformed\firebase-storage-20.1.0\AndroidManifest.xml:32:13-34:85
+129                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+129-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\f02826de5e3f0d90931cd1f2719ec8ae\transformed\firebase-storage-20.1.0\AndroidManifest.xml:33:17-107
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-storage:20.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\f02826de5e3f0d90931cd1f2719ec8ae\transformed\firebase-storage-20.1.0\AndroidManifest.xml:34:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\8a0ce78b45bd79f162ddaa816ee2e3bd\transformed\firebase-database-20.2.0\AndroidManifest.xml:31:13-33:85
+132                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+132-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\8a0ce78b45bd79f162ddaa816ee2e3bd\transformed\firebase-database-20.2.0\AndroidManifest.xml:32:17-109
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-database:20.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\8a0ce78b45bd79f162ddaa816ee2e3bd\transformed\firebase-database-20.2.0\AndroidManifest.xml:33:17-82
+134            <meta-data
+134-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+135                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+135-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\b3ac48a3bed365ad66b0aeb5f1fa553d\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Sebas\.gradle\caches\transforms-3\c8962ddb11a81f61d72402d93ed355b0\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+138                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+138-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Sebas\.gradle\caches\transforms-3\c8962ddb11a81f61d72402d93ed355b0\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\Sebas\.gradle\caches\transforms-3\c8962ddb11a81f61d72402d93ed355b0\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+140        </service>
+141
+142        <provider
+142-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+143            android:name="com.google.firebase.provider.FirebaseInitProvider"
+143-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+144            android:authorities="com.example.detroyfitness2.firebaseinitprovider"
+144-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+145            android:directBootAware="true"
+145-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+146            android:exported="false"
+146-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+147            android:initOrder="100" />
+147-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Sebas\.gradle\caches\transforms-3\3d8cbfb4c995818184ed707743a477a9\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+148
+149        <activity
+149-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\9d81336e98d929955295f754caf06cd8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+150            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+150-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\9d81336e98d929955295f754caf06cd8\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+151            android:exported="false"
+151-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\9d81336e98d929955295f754caf06cd8\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+152            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+152-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\9d81336e98d929955295f754caf06cd8\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+153
+154        <receiver
+154-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+155            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+155-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+156            android:enabled="true"
+156-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+157            android:exported="false" >
+157-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+158        </receiver>
+159
+160        <service
+160-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+161            android:name="com.google.android.gms.measurement.AppMeasurementService"
+161-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+162            android:enabled="true"
+162-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+163            android:exported="false" />
+163-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+164        <service
+164-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+165            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+165-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+168            android:permission="android.permission.BIND_JOB_SERVICE" />
+168-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\Sebas\.gradle\caches\transforms-3\1ec714769f60ddf6ee6b71a58817a6a0\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+169
+170        <uses-library
+170-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+171            android:name="androidx.window.extensions"
+171-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+172            android:required="false" />
+172-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+173        <uses-library
+173-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+174            android:name="androidx.window.sidecar"
+174-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+175            android:required="false" />
+175-->[androidx.window:window:1.0.0] C:\Users\Sebas\.gradle\caches\transforms-3\0573ed8f460a8432c3deacf93f7a7db6\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+176
+177        <meta-data
+177-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\3f68c7419ff48318d503756a44483377\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+178            android:name="com.google.android.gms.version"
+178-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\3f68c7419ff48318d503756a44483377\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+179            android:value="@integer/google_play_services_version" />
+179-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Sebas\.gradle\caches\transforms-3\3f68c7419ff48318d503756a44483377\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+180
+181        <provider
+181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+182            android:name="androidx.startup.InitializationProvider"
+182-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+183            android:authorities="com.example.detroyfitness2.androidx-startup"
+183-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+184            android:exported="false" >
+184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+185            <meta-data
+185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+186-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+187                android:value="androidx.startup" />
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Sebas\.gradle\caches\transforms-3\e3dc17c4ab01ce9fa2d2043dbc1b55cb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+188            <meta-data
+188-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sebas\.gradle\caches\transforms-3\b475ed1aed5382bfbd881a78352626d0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+189                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+189-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sebas\.gradle\caches\transforms-3\b475ed1aed5382bfbd881a78352626d0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+190                android:value="androidx.startup" />
+190-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Sebas\.gradle\caches\transforms-3\b475ed1aed5382bfbd881a78352626d0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+191        </provider>
+192    </application>
+193
+194</manifest>

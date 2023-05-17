@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">420295823683-of5ng3muc934b9iu86cjm4125dnr6qrn.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">420295823683</string>
+    <string name="google_api_key" translatable="false">AIzaSyBJR7LWkZvFYLxVPjqVWXqIr5xeTUavUrE</string>
+    <string name="google_app_id" translatable="false">1:420295823683:android:f95b870d2fdd5847f99ff6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBJR7LWkZvFYLxVPjqVWXqIr5xeTUavUrE</string>
+    <string name="google_storage_bucket" translatable="false">detroy-fitness-e203b.appspot.com</string>
+    <string name="project_id" translatable="false">detroy-fitness-e203b</string>
+</resources>

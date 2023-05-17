@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Creem un relativeLayout amb height Wrap i les mesures del seu pare. Amb els bias estem obligant que el layout sempre estigu ubicat a d'alt de tot. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!-- Creem un botó amb una amplada fixa de 100dp. Aquesta llargada será el tamany del Layout. El boto tindrá un color transparent. -->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="1er Dia"
+            android:textSize="18sp"
+            app:backgroundTint="#C2CA3E" />
+
+        <!-- Creem un layout dins que contindrà el text. Aquest te una llargada wrap, es a dir, que el seu tamany s'adaptará als elements de dins seu. Per a fer que el seu layout estigui sempre al centre (alineat) del seu pare hem d'utilitzar el valor centerInParent  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp">
+
+            <!-- Creem un text pel nom. Com el layout ja está centrat, automaticament el Text també está centrat. -->
+
+            <!-- Creem un text per a l'estat. Li diem amb el layout_below que sempre s'ubiqui sota del text nom. A part, li diem am el alignleft que el seu marge esquerra sigui el mateix que el text del nom -->
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

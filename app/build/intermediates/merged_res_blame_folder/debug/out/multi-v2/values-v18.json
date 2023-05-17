@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.detroyfitness2.app-mergeDebugResources-44:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Sebas\\.gradle\\caches\\transforms-3\\ff1859f3738cf3a6048d7f9ea8c6318b\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

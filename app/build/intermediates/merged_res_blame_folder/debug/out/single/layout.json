@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\questionario3.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\questionario3.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\pantalla_principal.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\pantalla_principal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_tecnica.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_tecnica.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\nutricion_alimentos.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\nutricion_alimentos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\style_alimentos.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\style_alimentos.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_iniciacion.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_iniciacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\registrarse.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\registrarse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_perdida_rutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_perdida_rutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\nutricion_plansemanal.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\nutricion_plansemanal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\videos_recetas.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\videos_recetas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\style_ejerciciorutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\style_ejerciciorutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\style_dieta.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\style_dieta.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\style_tecnica.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\style_tecnica.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\editar_perfil.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\editar_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\videos_tecnica.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\videos_tecnica.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_funcional.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_funcional.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_iniciacion_rutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_iniciacion_rutina.xml"
+    },
+    {
+        "merged": "com.example.detroyfitness2.app-mergeDebugResources-45:/layout/style_ejerciciorutina.xml",
+        "source": "com.example.detroyfitness2.app-main-48:/layout/style_ejerciciorutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\style_diasrutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\style_diasrutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_mostrar_rutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_mostrar_rutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\nutricion.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\nutricion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_perdida.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_perdida.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_funcional_rutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_funcional_rutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\estilo_tecnica.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\estilo_tecnica.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\questionario2.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\questionario2.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_hipertrofia_rutina.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_hipertrofia_rutina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_desafio.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_desafio.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\recetas.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\recetas.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_sobrecarga.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_sobrecarga.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_planes_hipertrofia.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_planes_hipertrofia.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\questionario.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\questionario.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-mergeDebugResources-45:\\layout\\entrenamiento_sobrecarga_2.xml",
+        "source": "C:\\Users\\Sebas\\.gradle\\daemon\\7.4.2\\com.example.detroyfitness2.app-main-48:\\layout\\entrenamiento_sobrecarga_2.xml"
+    }
+]
